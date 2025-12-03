@@ -20,6 +20,9 @@ int main() {
 
     while (true) {
         printf("Hello, Pico 2 W!\n");
-        pico_set_led(true);
+        pico_set_led(true);          // LED ON
+        sleep_ms(LED_DELAY_MS);      // 500ms待つ
+        pico_set_led(false);         // LED OFF
+        sleep_ms(LED_DELAY_MS);      // 500ms待つ
     }
 }
